@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mohamed</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="micon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&family=Sansita:ital@1&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <p class="logo"><span>MOH</span>AMED</p>
+            <ul id="menulist">
+                <li><a href="#">HOME</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="contact.html">CONTACT ME</a></li>
+            </ul>
+            <img src="images/menu.png" alt="menu-icon" class="menu-icon" 
+            onclick="tooglemenu()">
+        </nav>
+        <div class="text-box">
+            <h1>i'm <span class="auto-input"></span></h1>
+            <p>welcome my website were you can start your career of coding</p>
+            <a href="projects.html">Projects</a>
+            <a href="CV.pdf" class="bt">Download Cv</a>
+        </div>
+    </div>
+    <div class="middle-container">
+        <div class="profile">
+            <img src="images/mohamed02.png" alt="profile-image" width="198px">
+            <h2>Hello.</h2>
+            <p class="intro">i'm mohamed web developer and network engineer and I graduated from Jijiga University with
+                a bachelor degree in computer science.
+            </p>
+        </div>
+        <hr>
+        <div class="skills">
+            <h2>My Skills.</h2>
+            <div class="skill-row">
+                <img class="code-img" src="images/web-development.png" alt="">
+                <h3>Web development</h3>
+                <p>i started learning to code
+                    wen i was university because i wanted to make my own video game.
+                    over time, i have gained a wealth experience designing and developing mobile and web application.
+                </p>
+            </div>
+            <hr>
+            <div class="skill-row">
+                <img class="child-img" src="images/computer.png" alt="">
+                <h3>Networking</h3>
+                <p>network installation and configuration.<br>
+                    network troubleshooting.<br>
+                    cisco device configuration.<br>
+                    network infrastructure.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="contact-me">
+            <h2>Get In Touch</h2>
+            <h3>welcome with open hands</h3>
+            <p class="contact-message">you can contact me. thanks</p>
+            <br>
+            <a class="btn" href="contact.html">CONTACT ME</a>
+        </div>
+    </div>
+    <br>
+    <div class="bottom-container">
+        <a class="footer-link" href="https://www.facebook.com/profile.php?id=100006798078490"><img src="images/ficon.png" alt="facebook-image"></a>
+        <a class="footer-link" href="https://whatsapp.com/+251935774841"><img src="images/WhatsApp.png" alt="whatsapp-image"></a>
+        <a class="footer-link" href="https://www.aqoonsan.com/"><img src="images/website.png" alt="website-image"></a>
+        <p class="copyright-message"> copyright© mohamed ahmed 2022.</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-input",{
+            strings: ["mohamed ahmed", "web developer", "network enginer"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        })
+    </script>
+    <script>
+
+        var menulist = document.getElementById("menulist");
+
+        menulist.style.maxHeight = "0px";
+
+        function tooglemenu(){
+            if(menulist.style.maxHeight == "0px"){
+
+                menulist.style.maxHeight = "130px";
+            }
+            else{
+                menulist.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>
